@@ -59,9 +59,16 @@
 			<version>${wicket.version}</version>
 		</dependency>
 		-->
+
+        <!-- BEGIN ADDED -->
         <dependency>
             <groupId>org.apache.wicket</groupId>
             <artifactId>wicket-spring</artifactId>
+            <version>${wicket.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-auth-roles</artifactId>
             <version>${wicket.version}</version>
         </dependency>
         <dependency>
@@ -80,6 +87,7 @@
             <version>3.2.0.RELEASE</version>
             <scope>test</scope>
         </dependency>
+        <!-- END ADDED -->
 
 		<!-- LOGGING DEPENDENCIES - LOG4J -->
 		<dependency>
