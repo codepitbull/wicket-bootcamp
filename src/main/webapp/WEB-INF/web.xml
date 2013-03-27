@@ -16,6 +16,16 @@
 		The value might be either "development" (reloading when templates change) or 
 		"deployment". If no configuration is found, "development" is the default. -->
 
+    <!-- BEGIN INSERTED -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!-- END INSERTED -->
+
 	<filter>
 		<filter-name>wicket.demo</filter-name>
 		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
